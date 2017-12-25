@@ -1,0 +1,14 @@
+$colors: (
+  'deepskyblue': #00bfff,
+  'darkcyan': #008b8b,
+  'dark': #23262d
+);
+
+.box {
+  color: #fff;
+  background: map-get($colors, 'dark');
+}
+
+.color-primary {
+  color: map-get($colors, 'deepskyblue');
+}
