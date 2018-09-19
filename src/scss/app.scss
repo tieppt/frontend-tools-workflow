@@ -4,11 +4,15 @@ $colors: (
   'dark': #23262d
 );
 
-.box {
+.g .box {
   color: #fff;
   background: map-get($colors, 'dark');
 }
 
 .color-primary {
   color: map-get($colors, 'deepskyblue');
+}
+
+.bg-g {
+  background: linear-gradient(to right, #ec407a , map-get($colors, 'deepskyblue'))
 }

@@ -2,7 +2,7 @@ import orderBy from 'lodash.orderby';
 import { print, map } from './fn';
 
 // for webpack
-// import '../scss/app.scss';
+import '../scss/app.scss';
 
 const users = [
   { user: 'fred', age: 48 },
@@ -13,6 +13,8 @@ const users = [
 
 // Sort by `user` in ascending order and by `age` in descending order.
 const sorted = orderBy(users, ['user', 'age'], ['asc', 'desc']);
+
+console.log(sorted);
 
 print(sorted);
 

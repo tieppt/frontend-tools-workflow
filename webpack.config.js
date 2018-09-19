@@ -44,7 +44,10 @@ const config = {
       }
     ]
   },
-  plugins: [new webpack.optimize.UglifyJsPlugin(), extractSass]
+  plugins: [
+    // new webpack.optimize.UglifyJsPlugin(),
+    extractSass
+  ]
 };
 
 module.exports = config;
